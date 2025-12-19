@@ -1,0 +1,68 @@
+### Send POST request with json body
+POST https://httpbin.org/post
+Content-Type: application/json
+
+{
+  "id": 999,
+  "value": "content"
+}
+
+###
+### Send POST request with json body
+POST http://localhost:8072/internal/action/search
+Content-Type: application/json
+
+{
+  "collection": "hitorro",
+  "search": {
+    "__description": "SolrRetriever",
+    "query": "*:*"
+  }
+}
+
+
+###
+### Send POST request with json body
+GET http://localhost:8072/internal/action/xx
+Content-Type: application/json
+
+{
+  "collection": "hitorro",
+  "search": {
+    "__description": "SolrRetriever",
+    "query": "*:*"
+  }
+}
+
+
+###
+### index wiki file to solr
+GET http://localhost:8072/internal/action/xxsolr
+Content-Type: application/json
+
+{
+  "collection": "hitorro",
+  "search": {
+    "__description": "SolrRetriever",
+    "query": "*:*"
+  }
+}
+
+###
+
+
+###
+### Send POST request with json body
+GET http://localhost:8072/internal/action/env.id.createuniqueid
+
+Content-Type: application/json
+
+
+
+###
+POST http://wedge:8123/api/webhook/juAgF35yPNKVnvwe7TzoouQuHhSxfHCb
+Content-Type: application/json
+
+{
+  "key": "blaa"
+}

@@ -3,6 +3,7 @@ package com.hitorro.obj.core.solr.retrievalmodules.fixup;
 import com.hitorro.jsontypesystem.JVS;
 import com.hitorro.obj.core.solr.JVS2JVSEnrichMapper;
 import com.hitorro.obj.core.solr.JVS2JVSRemoveMapper;
+import com.hitorro.jsontypesystem.JVS2JVSTranslationMapper;
 import com.hitorro.util.core.ListUtil;
 import com.hitorro.util.json.keys.propaccess.Propaccess;
 
@@ -36,6 +37,34 @@ public class RemoveAddFieldMapper implements Function<JVS, JVS> {
         if (!ListUtil.nullOrEmpty(removeTags)) {
             func = combine(func, new JVS2JVSRemoveMapper(removeTags.toArray(new String[removeTags.size()])));
         }
+        return func;
+    }
+
+    /**
+     * Get a function that includes translation of mls fields.
+     * 
+     * @param remove Fields to remove
+     * @param add Fields to add
+     * @param enrichTags Tags for enrichment
+     * @param removeTags Tags for removal
+     * @param translator The translator to use for translations
+     * @param targetLanguages Target languages for translation (e.g., "de", "fr", "es")
+     * @param mlsFields MLS fields to translate (e.g., "title.mls", "body.mls")
+     * @param sourceLanguage Source language code (e.g., "en")
+     * @return Combined function
+     */
+    public static Function<JVS, JVS> getWithTranslation(List<String> remove, List<String> add, 
+            List<String> enrichTags, List<String> removeTags,
+            JVS2JVSTranslationMapper.Translator translator,
+            List<String> targetLanguages, List<String> mlsFields, String sourceLanguage) {
+        Function<JVS, JVS> func = get(remove, add, enrichTags, removeTags);
+        
+        if (translator != null && !ListUtil.nullOrEmpty(targetLanguages) && !ListUtil.nullOrEmpty(mlsFields)) {
+            JVS2JVSTranslationMapper translationMapper = new JVS2JVSTranslationMapper(
+                translator, targetLanguages, mlsFields, sourceLanguage);
+            func = combine(func, translationMapper);
+        }
+        
         return func;
     }
 

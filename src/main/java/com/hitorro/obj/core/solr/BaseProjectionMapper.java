@@ -13,6 +13,7 @@ import com.hitorro.util.core.ListUtil;
 import com.hitorro.util.core.events.cache.HashCache;
 import com.hitorro.util.core.iterator.mappers.BaseMapper;
 import com.hitorro.util.core.map.MapUtil;
+import com.hitorro.util.core.string.StringUtil;
 import com.hitorro.util.core.thread.ThreadStash;
 import com.hitorro.util.json.keys.propaccess.PropaccessError;
 
@@ -29,23 +30,35 @@ public abstract class BaseProjectionMapper<ACTION extends ExecutorAction> extend
     };
 
     protected HashCache<Type, ExecutionBuilder> cache;
-    protected ProjectionContext pc = new ProjectionContext();
     private String[] tags;
 
     protected abstract HashCache<Type, ExecutionBuilder> getCache();
 
     protected void setCache(String... tags) {
         this.tags = tags;
+        BaseProjectionFactoryMapper mapper = getMapper();
         if (ArrayUtil.nullOrEmpty(tags)) {
-            BaseProjectionFactoryMapper mapper = getMapper();
             String[] basic = {"basic"};
             mapper.setPredicate(mapper.getPredicate().and(new GroupTagPredicated(basic).or(new GroupTagNull())));
-            cache = Type.getExecBuilderCache("e", mapper);
         } else {
-            BaseProjectionFactoryMapper mapper = getMapper();
             mapper.setPredicate(mapper.getPredicate().and(new GroupTagPredicated(tags).or(new GroupTagNull())));
-            cache = Type.getExecBuilderCache("e", mapper);
         }
+        // Use a unique cache key that includes the tag set to avoid collisions
+        String cacheKey = buildCacheKey(tags);
+        cache = Type.getExecBuilderCache(cacheKey, mapper);
+    }
+
+    private String buildCacheKey(String[] tags) {
+        if (ArrayUtil.nullOrEmpty(tags)) {
+            return getClass().getSimpleName() + ":basic";
+        }
+        StringBuilder sb = new StringBuilder(getClass().getSimpleName());
+        sb.append(':');
+        for (int i = 0; i < tags.length; i++) {
+            if (i > 0) sb.append(',');
+            sb.append(tags[i]);
+        }
+        return sb.toString();
     }
 
     public abstract BaseProjectionFactoryMapper<ACTION> getMapper();
@@ -99,4 +112,3 @@ class GroupTagNull implements Predicate<BaseT> {
         return false;
     }
 }
-

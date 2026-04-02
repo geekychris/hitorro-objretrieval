@@ -2,9 +2,14 @@ package com.hitorro.obj.core.solr;
 
 import com.hitorro.jsontypesystem.JVS;
 import com.hitorro.jsontypesystem.Type;
+import com.hitorro.jsontypesystem.executors.BaseProjectionFactoryMapper;
+import com.hitorro.jsontypesystem.executors.ExecutionBuilder;
+import com.hitorro.jsontypesystem.executors.IndexExecutionBuilderMapper;
+import com.hitorro.jsontypesystem.executors.IndexerAction;
+import com.hitorro.jsontypesystem.executors.ProjectionContext;
 import com.hitorro.util.core.events.cache.HashCache;
 
-public class JVS2SolrMapper extends BaseProjectionMapper<com.hitorro.jsontypesystem.executors.IndexerAction> {
+public class JVS2SolrMapper extends BaseProjectionMapper<IndexerAction> {
 
     public JVS2SolrMapper(String... tags) {
         setCache(tags);
@@ -16,7 +21,7 @@ public class JVS2SolrMapper extends BaseProjectionMapper<com.hitorro.jsontypesys
 
     @Override
     public JVS apply(final JVS jvs) {
-        com.hitorro.jsontypesystem.executors.ProjectionContext pc = project(jvs);
+        ProjectionContext pc = project(jvs);
         if (pc == null) {
             return null;
         }
@@ -24,12 +29,12 @@ public class JVS2SolrMapper extends BaseProjectionMapper<com.hitorro.jsontypesys
     }
 
     @Override
-    protected HashCache<Type, com.hitorro.jsontypesystem.executors.ExecutionBuilder> getCache() {
+    protected HashCache<Type, ExecutionBuilder> getCache() {
         return Type.projectionCache.get("index");
     }
 
     @Override
-    public com.hitorro.jsontypesystem.executors.BaseProjectionFactoryMapper<com.hitorro.jsontypesystem.executors.IndexerAction> getMapper() {
-        return new com.hitorro.jsontypesystem.executors.IndexExecutionBuilderMapper();
+    public BaseProjectionFactoryMapper<IndexerAction> getMapper() {
+        return new IndexExecutionBuilderMapper();
     }
 }

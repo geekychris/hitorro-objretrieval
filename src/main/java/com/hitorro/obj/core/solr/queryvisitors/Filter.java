@@ -20,7 +20,7 @@ public class Filter implements QueryVisitor {
 
     @Override
     public void finalize(final JVS jvsQuery, final RetrievalContext retrievalContext) {
-        List<String> queries = fqsKey.apply(jvsQuery);
+        List<String> queries = fqsKey.apply(jvsQuery.getJsonNode());
         for (String q : queries) {
             retrievalContext.getSolrQuery().add("fq", q);
         }

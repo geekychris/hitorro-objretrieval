@@ -38,7 +38,7 @@ public class Sort implements QueryVisitor {
 
     @NotNull
     protected StringBuilder finalizeAux(final JVS jvsQuery, final RetrievalContext rc) {
-        List<SortRow> rows = sortRowsKey.apply(jvsQuery);
+        List<SortRow> rows = sortRowsKey.apply(jvsQuery.getJsonNode());
         StringBuilder sb = new StringBuilder();
         for (SortRow sr : rows) {
             addSortField(rc, sb, sr);

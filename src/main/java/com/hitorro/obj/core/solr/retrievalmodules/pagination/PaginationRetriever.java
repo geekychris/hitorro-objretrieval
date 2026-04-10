@@ -14,13 +14,13 @@ public class PaginationRetriever implements Retriever {
     public static JsonProperty pagination = new JsonProperty("page", "", null);
 
     public boolean getParticipate(JVS query, final RetrievalContext context) {
-        JsonNode node = pagination.apply(query);
+        JsonNode node = pagination.apply(query.getJsonNode());
         return node != null;
     }
 
     @Override
     public AbstractIterator<JVS> appendRetriever(final AbstractIterator<JVS> iter, final JVS query, final RetrievalContext context) {
-        JsonNode node = pagination.apply(query);
+        JsonNode node = pagination.apply(query.getJsonNode());
         int rows = rowsKey.apply(node);
         int page = pageKey.apply(node);
         int skip = rows * page;

@@ -17,7 +17,7 @@ public class Select implements QueryVisitor {
     public void visit(final JVS jvsQuery, final RetrievalContext retrievalContext) {
         retrievalContext.addAlias("score", null);
         retrievalContext.addAlias("id.id", "id.id");
-        List<SelectRow> rows = selectRowsKey.apply(jvsQuery);
+        List<SelectRow> rows = selectRowsKey.apply(jvsQuery.getJsonNode());
         retrievalContext.addAlias(rows);
     }
 

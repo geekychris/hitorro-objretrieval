@@ -345,7 +345,7 @@ public class SolrService {
         BaseFile f = Env.getBaseFile(new File("/Users/chris/pics"));
         try {
             AbstractIterator<FileInfo> t = f.list().map(FileInfoMapper.me);
-            t.map(FileInfo::getJVS).sink(sink);
+            t.map(fi -> new JVS(fi.getAsJsonNode())).sink(sink);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -360,7 +360,7 @@ public class SolrService {
                     argType = ArgType.JVSResponseSink) Sink<JVS> sink) throws Exception {
         JVS query = iter.getFirstItem();
         SolrQuery sq = new SolrQuery();
-        String collection = collectionKey.apply(query);
+        String collection = collectionKey.apply(query.getJsonNode());
         CollectionConfig cc = CollectionConfig.configCache.get(collection);
         String lang = "en";
 

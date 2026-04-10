@@ -9,7 +9,7 @@ public class Rows implements QueryVisitor {
 
     @Override
     public void visit(final JVS jvsQuery, final RetrievalContext retrievalContext) {
-        retrievalContext.results = Math.max(retrievalContext.results, rows.apply(jvsQuery));
+        retrievalContext.results = Math.max(retrievalContext.results, rows.apply(jvsQuery.getJsonNode()));
     }
 
     @Override

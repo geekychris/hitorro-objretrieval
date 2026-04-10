@@ -29,7 +29,7 @@ public class SolrRetriever implements Retriever {
 
     @Override
     public boolean getParticipate(final JVS query, final RetrievalContext context) {
-        JsonNode node = searchKey.apply(query);
+        JsonNode node = searchKey.apply(query.getJsonNode());
         if (node == null) {
             return false;
         }
@@ -50,8 +50,8 @@ public class SolrRetriever implements Retriever {
 
         JVS qJvs = new JVS();
         qJvs.setType("core_query");
-        String lang = langKey.apply(query);
-        String naturalQ = naturalKey.apply(query);
+        String lang = langKey.apply(query.getJsonNode());
+        String naturalQ = naturalKey.apply(query.getJsonNode());
         if (!StringUtil.nullOrEmptyString(lang) && !StringUtil.nullOrEmptyString(naturalQ)) {
             qJvs.addLangTextTemporaryReLook(naturalK, naturalQ, lang);
         }

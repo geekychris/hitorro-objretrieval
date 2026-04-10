@@ -49,9 +49,9 @@ public class SolrQueryContext {
             valid = false;
         } else {
             query = JVS.read(q);
-            queryType = JsonTypeSystem.getMe().getType(CollectionConfig.collectionMetaTypeKey.apply(query));
-            cc = CollectionConfig.configCache.get(CollectionConfig.collectionMetaNameKey.apply(query));
-            lang = CollectionConfig.langKey.apply(query);
+            queryType = JsonTypeSystem.getMe().getType(CollectionConfig.collectionMetaTypeKey.apply(query.getJsonNode()));
+            cc = CollectionConfig.configCache.get(CollectionConfig.collectionMetaNameKey.apply(query.getJsonNode()));
+            lang = CollectionConfig.langKey.apply(query.getJsonNode());
             retrievalContext = new RetrievalContextBase(cc, lang);
             valid = (cc != null && queryType != null);
         }

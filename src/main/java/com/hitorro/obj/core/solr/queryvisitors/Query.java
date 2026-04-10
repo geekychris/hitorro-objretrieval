@@ -20,7 +20,7 @@ public class Query implements QueryVisitor {
 
     @Override
     public void finalize(final JVS jvsQuery, final RetrievalContext rc) {
-        List<QueryRow> rows = queryRowsKey.apply(jvsQuery);
+        List<QueryRow> rows = queryRowsKey.apply(jvsQuery.getJsonNode());
         for (QueryRow row : rows) {
             row.addQuery(rc.getSolrQuery());
         }

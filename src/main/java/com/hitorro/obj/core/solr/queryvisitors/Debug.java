@@ -14,10 +14,10 @@ public class Debug implements QueryVisitor {
 
     @Override
     public void finalize(final JVS jvsQuery, final RetrievalContext retrievalContext) {
-        if (debug.apply(jvsQuery)) {
+        if (debug.apply(jvsQuery.getJsonNode())) {
             retrievalContext.getSolrQuery().setShowDebugInfo(true);
         }
-        if (timing.apply(jvsQuery)) {
+        if (timing.apply(jvsQuery.getJsonNode())) {
             retrievalContext.getSolrQuery().set("debug", "timing");
         }
     }

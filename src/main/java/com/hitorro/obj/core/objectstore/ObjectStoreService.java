@@ -109,7 +109,7 @@ public class ObjectStoreService {
                     description = "",
                     defaultValue = "",
                     argType = ArgType.Args) JVS args) throws Exception {
-        String shard = shardKey.apply(args);
+        String shard = shardKey.apply(args.getJsonNode());
         ObjectStoreShard s = getShard(shard);
         OutputOutputStream oos = new OutputOutputStream(new DataOutputStream(os));
         s.getValuesAsByteStream(iter, oos);

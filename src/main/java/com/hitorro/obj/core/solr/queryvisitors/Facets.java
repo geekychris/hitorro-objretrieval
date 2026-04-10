@@ -50,7 +50,7 @@ public class Facets implements QueryVisitor {
 
     @Override
     public void finalize(final JVS jvsQuery, final RetrievalContext rc) {
-        JsonNode facets = facetsKey.apply(jvsQuery);
+        JsonNode facets = facetsKey.apply(jvsQuery.getJsonNode());
         if (facets == null) {
             return;
         }

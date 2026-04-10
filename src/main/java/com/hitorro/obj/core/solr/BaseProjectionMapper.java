@@ -68,7 +68,7 @@ public abstract class BaseProjectionMapper<ACTION extends ExecutorAction> extend
         pc.source = jvs;
         pc.target = new JVS();
         try {
-            cache.get(jvs.getType()).getCurrentNode().project(pc);
+            cache.get((Type) jvs.getType()).getCurrentNode().project(pc);
         } catch (PropaccessError propaccessError) {
             return null;
         }

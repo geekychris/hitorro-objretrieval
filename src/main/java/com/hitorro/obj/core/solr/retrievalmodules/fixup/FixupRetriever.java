@@ -24,13 +24,13 @@ public class FixupRetriever implements Retriever {
     public static JsonProperty fixup = new JsonProperty("fixup", "", null);
 
     public boolean getParticipate(JVS query, final RetrievalContext context) {
-        JsonNode node = fixup.apply(query);
+        JsonNode node = fixup.apply(query.getJsonNode());
         return node != null;
     }
 
     @Override
     public AbstractIterator<JVS> appendRetriever(final AbstractIterator<JVS> iter, final JVS query, final RetrievalContext context) {
-        JsonNode node = fixup.apply(query);
+        JsonNode node = fixup.apply(query.getJsonNode());
         Mapper<JVS, JVS> mapper = null;
         List<String> remove = removeKeys.apply(node);
         List<String> add = addKeys.apply(node);

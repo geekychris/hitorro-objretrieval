@@ -16,9 +16,9 @@ public class RangeFacets extends Facets {
     }
 
     public void finalizeAux(final JVS jvsQuery, final RetrievalContext rc, String type, String field, String limit) {
-        String gap = gapProperty.apply(jvsQuery);
-        String start = startProperty.apply(jvsQuery);
-        String stop = stopProperty.apply(jvsQuery);
+        String gap = gapProperty.apply(jvsQuery.getJsonNode());
+        String start = startProperty.apply(jvsQuery.getJsonNode());
+        String stop = stopProperty.apply(jvsQuery.getJsonNode());
         String translatedField = rc.getTranslatedField(field);
         addQuery(rc, "f.%s.facet.%s.gap", gap, translatedField, type);
         addQuery(rc, "f.%s.facet.%s.start", start, translatedField, type);

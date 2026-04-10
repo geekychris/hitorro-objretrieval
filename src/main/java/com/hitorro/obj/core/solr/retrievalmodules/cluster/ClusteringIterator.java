@@ -65,7 +65,7 @@ public class ClusteringIterator extends AbstractIterator<JVS> implements Retriev
     public JVS next() {
         JVS vs = iterIn.next();
         JVS doc = vs.getDoc();
-        documents.add(new Document(title.apply(doc), body.apply(doc), url.apply(doc)));
+        documents.add(new Document(title.apply(doc.getJsonNode()), body.apply(doc.getJsonNode()), url.apply(doc.getJsonNode())));
         ids.add(doc.getId());
         counter++;
         return vs;

@@ -44,7 +44,7 @@ public class ClusteringRetreiver implements Retriever {
     }
 
     public boolean getParticipate(JVS query, final RetrievalContext context) {
-        JsonNode node = clusterRetrieve.apply(query);
+        JsonNode node = clusterRetrieve.apply(query.getJsonNode());
         if (node != null) {
             maxResults = maxResultsKey.apply(node);
             context.results = Math.max(maxResultsKey.apply(node), context.results);
@@ -58,7 +58,7 @@ public class ClusteringRetreiver implements Retriever {
                                                  final JVS query,
                                                  final RetrievalContext context) {
 
-        JsonNode jn = clusterRetrieve.apply(query);
+        JsonNode jn = clusterRetrieve.apply(query.getJsonNode());
         if (jn != null) {
             maxResults = maxResultsKey.apply(jn);
             context.results = Math.max(maxResultsKey.apply(jn), context.results);

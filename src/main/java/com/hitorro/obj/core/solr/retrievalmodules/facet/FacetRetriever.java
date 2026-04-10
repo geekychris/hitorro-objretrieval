@@ -25,7 +25,7 @@ public class FacetRetriever implements Retriever {
     }
 
     public boolean getParticipate(JVS query, final RetrievalContext context) {
-        JsonNode node = facetRetrieve.apply(query);
+        JsonNode node = facetRetrieve.apply(query.getJsonNode());
         return node != null;
     }
 

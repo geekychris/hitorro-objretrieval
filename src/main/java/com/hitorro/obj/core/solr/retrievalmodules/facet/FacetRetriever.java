@@ -17,7 +17,7 @@ import java.util.List;
 
 public class FacetRetriever implements Retriever {
     public static final String name = "f";
-    public static String key = "facet";
+    public static final String key = "facet";
     public static JsonProperty facetRetrieve = new JsonProperty("search.facets", "", null);
 
     public boolean aggregates() {

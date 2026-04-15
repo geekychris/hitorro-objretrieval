@@ -5,8 +5,8 @@ import com.hitorro.util.json.JsonInitable;
 import com.hitorro.util.json.keys.StringProperty;
 
 public class SortRow implements JsonInitable {
-    public static final StringProperty sortKey = new StringProperty("field", "", null);
-    public static final StringProperty sortDirKey = new StringProperty("dir", "", "desc");
+    public static StringProperty sortKey = new StringProperty("field", "", null);
+    public static StringProperty sortDirKey = new StringProperty("dir", "", "desc");
     protected String field;
     protected String dir;
 

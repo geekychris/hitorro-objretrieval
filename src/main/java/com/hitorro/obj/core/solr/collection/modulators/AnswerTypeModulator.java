@@ -25,7 +25,7 @@ interface PosVisitor {
 
 public class AnswerTypeModulator implements QueryModulatorInterface {
 
-    public static final StringProperty typeKey = new StringProperty("type", "", "");
+    public static StringProperty typeKey = new StringProperty("type", "", "");
 
     public static void visit(JsonNode root, Set<String> pos, PosVisitor visitor) {
         if (root.isArray()) {

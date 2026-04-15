@@ -20,7 +20,7 @@ import java.util.Iterator;
 import java.util.Map;
 
 public class SolrIterator extends AbstractIterator<JVS> implements RetrievalAggregate {
-    public static String typeNameKey = "core_summary";
+    public static final String typeNameKey = "core_summary";
     private final QueryResponse qr;
     private final Iterator<SolrDocument> iter;
     private final SolrDocument2JVSMapper mapper;

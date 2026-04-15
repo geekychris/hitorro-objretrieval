@@ -15,15 +15,15 @@ import org.carrot2.clustering.lingo.LingoClusteringAlgorithm;
 
 
 public class ClusteringRetreiver implements Retriever {
-    public static final IntegerProperty maxResultsKey = new IntegerProperty("rows", "maximum results", 100);
-    public static final StringProperty queryKey = new StringProperty("query", "query", "");
-    public static final StringProperty algorithmKey = new StringProperty("algorithm", "algorithm", "lingo");
-    public static final StringProperty titleKey = new StringProperty("title", "field", "title.mls[en].clean");
-    public static final StringProperty bodyKey = new StringProperty("body", "field", "body.mls[en].clean");
-    public static final BooleanProperty includeIdKey = new BooleanProperty("ids", "ids", true);
+    public static IntegerProperty maxResultsKey = new IntegerProperty("rows", "maximum results", 100);
+    public static StringProperty queryKey = new StringProperty("query", "query", "");
+    public static StringProperty algorithmKey = new StringProperty("algorithm", "algorithm", "lingo");
+    public static StringProperty titleKey = new StringProperty("title", "field", "title.mls[en].clean");
+    public static StringProperty bodyKey = new StringProperty("body", "field", "body.mls[en].clean");
+    public static BooleanProperty includeIdKey = new BooleanProperty("ids", "ids", true);
     public static final String name = "cluster";
-    public static String key = "clust";
-    public static String typeNameKey = "access:cluster";
+    public static final String key = "clust";
+    public static final String typeNameKey = "access:cluster";
     public static JsonProperty clusterRetrieve = new JsonProperty("cluster", "", null);
     private final ClusteringIterator iter = null;
     public String url = "url";

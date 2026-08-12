@@ -5,11 +5,11 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.hitorro.jsontypesystem.JsonTypeSystem;
 import com.hitorro.jsontypesystem.Type;
 import com.hitorro.util.basefile.Name2JsonMapper;
-import com.hitorro.util.core.Env;
 import com.hitorro.util.core.events.cache.HashCache;
 import com.hitorro.util.json.JsonInitable;
 import com.hitorro.util.json.keys.JsonProperty;
 import com.hitorro.util.json.keys.StringProperty;
+import com.hitorro.util.basefile.tools.EnvBaseFiles;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -20,7 +20,7 @@ public class CollectionConfig implements JsonInitable {
     public static HashCache<String, JsonNode> jsonCollectionConfig =
             new HashCache<>(0, true,
                     null, "collectionconfig",
-                    new Name2JsonMapper(Env.getBinConfigBaseFile().getChild("collections"), null));
+                    new Name2JsonMapper(EnvBaseFiles.getBinConfigBaseFile().getChild("collections"), null));
 
     public static HashCache<String, CollectionConfig> configCache =
             new HashCache<>(0, true,

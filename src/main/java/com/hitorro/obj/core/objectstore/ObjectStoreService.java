@@ -17,6 +17,7 @@ import com.hitorro.util.io.largedata.compressedstreams.OutputOutputStream;
 import com.hitorro.util.json.keys.StringProperty;
 import com.hitorro.util.startupframework.Dependency;
 import com.hitorro.util.startupframework.phases.ServiceDefinition;
+import com.hitorro.util.basefile.tools.EnvBaseFiles;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.DataOutputStream;
@@ -45,7 +46,7 @@ public class ObjectStoreService {
                                  @DebugArgAno(argType = ArgType.Uri) String uri,
                                  @DebugArgAno(argType = ArgType.Request) HttpServletRequest req
     ) throws Exception {
-        BaseFile bf = Env.getBaseFile(new File("/Users/chris/wikienrich.json.bz2"));
+        BaseFile bf = EnvBaseFiles.getBaseFile(new File("/Users/chris/wikienrich.json.bz2"));
         String shardName = "test";
         testWriteRead(bf, shardName);
         return null;

@@ -37,6 +37,7 @@ import com.hitorro.util.startupframework.Dependency;
 import com.hitorro.util.startupframework.phases.ServiceDefinition;
 import org.apache.solr.client.solrj.SolrQuery;
 import org.apache.solr.client.solrj.impl.HttpSolrClient;
+import com.hitorro.util.basefile.tools.EnvBaseFiles;
 
 import java.io.File;
 import java.io.IOException;
@@ -91,7 +92,7 @@ public class SolrService {
     }
 
     public static BaseFile getLocalDir(String coreName) {
-        BaseFile bf = Env.getBaseFile(SolrService.getFileSolrData());
+        BaseFile bf = EnvBaseFiles.getBaseFile(SolrService.getFileSolrData());
         return bf.getChild(coreName);
     }
 
@@ -150,7 +151,7 @@ public class SolrService {
     }
 
     private boolean createSchemaFromTemplate(File solrData) throws IOException {
-        BaseFile sdBF = Env.getBaseFile(solrData).getChild("conf");
+        BaseFile sdBF = EnvBaseFiles.getBaseFile(solrData).getChild("conf");
         if (!sdBF.exists()) {
             Log.indexer.error("Directory does not exist to create schema %s", sdBF);
             return false;
@@ -283,7 +284,7 @@ public class SolrService {
         File solrData = getFileSolrData();
         if (!solrData.exists()) {
             solrData.mkdir();
-            BaseFile a = Env.getDataBaseFile().getChild("solrmaster");
+            BaseFile a = EnvBaseFiles.getDataBaseFile().getChild("solrmaster");
             if (!a.exists()) {
                 Log.util.fatal("Unable to copy solrmaster, cant find solrmaster");
                 return;
@@ -342,9 +343,9 @@ public class SolrService {
             @DebugArgAno(keyName = "out",
                     argType = ArgType.JVSResponseSink) Sink<JVS> sink) {
 
-        BaseFile f = Env.getBaseFile(new File("/Users/chris/pics"));
+        BaseFile f = EnvBaseFiles.getBaseFile(new File("/Users/chris/pics"));
         try {
-            AbstractIterator<FileInfo> t = f.list().map(FileInfoMapper.me);
+            AbstractIterator<FileInfo> t = com.hitorro.util.core.iterator.helpers.BaseFileIterators.list(f).map(FileInfoMapper.me);
             t.map(fi -> new JVS(fi.getAsJsonNode())).sink(sink);
         } catch (IOException e) {
             e.printStackTrace();

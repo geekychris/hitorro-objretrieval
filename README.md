@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/logo.png" alt="Hitorro Objretrieval logo" width="180">
+</p>
+
 # hitorro-objretrieval
 
 Solr-based object retrieval and search framework with retrieval pipelines, object storage, and document clustering.

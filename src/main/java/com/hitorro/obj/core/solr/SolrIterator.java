@@ -1,8 +1,8 @@
 package com.hitorro.obj.core.solr;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.node.JsonNodeFactory;
-import com.fasterxml.jackson.databind.node.ObjectNode;
+import tools.jackson.databind.JsonNode;
+import tools.jackson.databind.node.JsonNodeFactory;
+import tools.jackson.databind.node.ObjectNode;
 import com.hitorro.jsontypesystem.JVS;
 import com.hitorro.jsontypesystem.JsonTypeSystem;
 import com.hitorro.jsontypesystem.Type;
@@ -18,6 +18,7 @@ import org.apache.solr.common.SolrDocumentList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+import com.hitorro.util.json.JsonValues;
 
 public class SolrIterator extends AbstractIterator<JVS> implements RetrievalAggregate {
     public static final String typeNameKey = "core_summary";
@@ -100,7 +101,7 @@ class SolrDocument2JVSMapper implements Mapper<SolrDocument, JVS> {
             String id = jvs.getId();
             JsonNode v = explainMap.get(id);
             if (v != null) {
-                jvs.set("_debug", v.textValue());
+                jvs.set("_debug", JsonValues.textValue(v));
             }
         }
     }

@@ -1,8 +1,8 @@
 package com.hitorro.obj.core.solr.retrievalmodules.facet;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.node.JsonNodeFactory;
-import com.fasterxml.jackson.databind.node.ObjectNode;
+import tools.jackson.databind.JsonNode;
+import tools.jackson.databind.node.JsonNodeFactory;
+import tools.jackson.databind.node.ObjectNode;
 import com.hitorro.jsontypesystem.JVS;
 import com.hitorro.obj.core.solr.RetrievalContext;
 import com.hitorro.obj.core.solr.retrievalmodules.RetrievalAggregate;

@@ -1,6 +1,6 @@
 package com.hitorro.obj.core;
 
-import com.fasterxml.jackson.databind.JsonNode;
+import tools.jackson.databind.JsonNode;
 import com.hitorro.features.FeatureService;
 import com.hitorro.jsontypesystem.JVS;
 import com.hitorro.network.servlet.ServletService;

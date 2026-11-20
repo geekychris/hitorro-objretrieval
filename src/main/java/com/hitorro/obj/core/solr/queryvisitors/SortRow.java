@@ -1,6 +1,6 @@
 package com.hitorro.obj.core.solr.queryvisitors;
 
-import com.fasterxml.jackson.databind.JsonNode;
+import tools.jackson.databind.JsonNode;
 import com.hitorro.util.json.JsonInitable;
 import com.hitorro.util.json.keys.StringProperty;
 

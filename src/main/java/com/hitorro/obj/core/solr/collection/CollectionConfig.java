@@ -1,7 +1,7 @@
 package com.hitorro.obj.core.solr.collection;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.node.ObjectNode;
+import tools.jackson.databind.JsonNode;
+import tools.jackson.databind.node.ObjectNode;
 import com.hitorro.jsontypesystem.JsonTypeSystem;
 import com.hitorro.jsontypesystem.Type;
 import com.hitorro.util.basefile.Name2JsonMapper;
@@ -52,7 +52,7 @@ public class CollectionConfig implements JsonInitable {
         JsonNode n = intents.apply(node);
         if (n != null && n.isObject()) {
             ObjectNode intents = (ObjectNode) n;
-            Iterator<String> keys = intents.fieldNames();
+            Iterator<String> keys = intents.propertyNames().iterator();
             while (keys.hasNext()) {
                 String key = keys.next();
                 JsonNode val = intents.get(key);

@@ -29,7 +29,7 @@ public class JVSObjectStoreClient extends HTTPIterableClient<JVS, JVS> {
             JsonSink jsonSink = new JsonSink(o);
             return new BaseSink<JVS>() {
                 @Override
-                public boolean init(com.fasterxml.jackson.databind.JsonNode node) {
+                public boolean init(tools.jackson.databind.JsonNode node) {
                     return jsonSink.init(node);
                 }
 

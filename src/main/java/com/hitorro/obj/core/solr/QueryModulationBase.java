@@ -1,6 +1,6 @@
 package com.hitorro.obj.core.solr;
 
-import com.fasterxml.jackson.databind.JsonNode;
+import tools.jackson.databind.JsonNode;
 import com.hitorro.obj.core.SolrQueryContext;
 import com.hitorro.obj.core.solr.collection.CollectionIntent;
 import com.hitorro.util.core.string.StringUtil;

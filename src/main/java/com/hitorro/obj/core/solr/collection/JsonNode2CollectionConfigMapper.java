@@ -1,6 +1,6 @@
 package com.hitorro.obj.core.solr.collection;
 
-import com.fasterxml.jackson.databind.JsonNode;
+import tools.jackson.databind.JsonNode;
 import com.hitorro.util.core.iterator.Mapper;
 
 public

@@ -1,6 +1,6 @@
 package com.hitorro.obj.core.solr.queryvisitors;
 
-import com.fasterxml.jackson.databind.JsonNode;
+import tools.jackson.databind.JsonNode;
 import com.hitorro.util.core.ArrayUtil;
 import com.hitorro.util.core.string.Fmt;
 import com.hitorro.util.core.string.StringUtil;
@@ -8,6 +8,7 @@ import com.hitorro.util.json.JsonInitable;
 import com.hitorro.util.json.keys.StringProperty;
 
 import java.util.concurrent.atomic.AtomicInteger;
+import com.hitorro.util.json.JsonValues;
 
 public class SelectRow implements JsonInitable {
     private static final AtomicInteger intCounter = new AtomicInteger();
@@ -45,8 +46,8 @@ public class SelectRow implements JsonInitable {
             alias = AliasKey.apply(node);
             if (StringUtil.nullOrEmptyString(field)) {
             }
-        } else if (node.isTextual()) {
-            String txt = node.textValue();
+        } else if (node.isString()) {
+            String txt = JsonValues.textValue(node);
             if (txt.contains("as")) {
 
                 // dumb ass check for something that looks like a function

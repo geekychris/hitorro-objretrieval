@@ -1,6 +1,6 @@
 package com.hitorro.obj.core.solr;
 
-import com.fasterxml.jackson.databind.JsonNode;
+import tools.jackson.databind.JsonNode;
 import com.hitorro.jsontypesystem.JVS;
 import com.hitorro.obj.core.SolrService;
 import com.hitorro.util.basefile.tools.BaseFileUtil;

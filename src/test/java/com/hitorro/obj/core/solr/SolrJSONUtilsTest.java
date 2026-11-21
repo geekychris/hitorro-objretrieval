@@ -1,8 +1,8 @@
 package com.hitorro.obj.core.solr;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.node.JsonNodeFactory;
-import com.fasterxml.jackson.databind.node.ObjectNode;
+import tools.jackson.databind.JsonNode;
+import tools.jackson.databind.node.JsonNodeFactory;
+import tools.jackson.databind.node.ObjectNode;
 import org.apache.solr.common.util.SimpleOrderedMap;
 import org.junit.Test;
 
@@ -91,7 +91,7 @@ public class SolrJSONUtilsTest {
     @Test
     public void testGetSolrMap2JsonWithString() {
         JsonNode result = SolrJSONUtils.getSolrMap2Json("hello");
-        assertTrue(result.isTextual());
+        assertTrue(result.isString());
         assertEquals("hello", result.asText());
     }
 

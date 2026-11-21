@@ -1,0 +1,186 @@
+store.parse.0=252
+store.bytes.0=018502789c5d8e4d0e82301484af6266e1aa2ae02f8d71255e425d54a8a40a6d0245130d09c770e756cfe14d3c8147f08126266e9a796fa6f3bd3354047e6e5e6879cc79e482216ae68f34a950faeba264b0ca2692e685ca72db9a9b9042a129b405773d863c3419d96ed765d8262206b75921e99b8873f02504c5375833a4d28a1abda7ae032d4fe0ba4812226c545c77f507c3d178e23b3f45d7c8b0eefef32681e733345427e8534c4b6ae8385d9204c5e3de7b56b715a674c4ac4d2c999a9d22e375bd5428df4eaa4a71
+store.write.0=ok
+store.get.0={"id":{"id":"news:d1","did":"d1","domain":"news"},"title":"First Doc","count":12,"score":1.1,"flag":true,"tags":["a","b"],"meta":{"k":"v","z":null},"big":-350287150,"dec":1.2345678901234568E29,"e":1.0E30,"neg":-0.0,"s":"é/ \\"<tag>&","emoji":"😀"} | {id:{id:TextNode,did:TextNode,domain:TextNode},title:TextNode,count:IntNode,score:DoubleNode,flag:BooleanNode,tags:[TextNode,TextNode],meta:{k:TextNode,z:NullNode},big:IntNode,dec:DoubleNode,e:DoubleNode,neg:DoubleNode,s:TextNode,emoji:TextNode}
+store.util0.0=008502789c5d8e4d0e82301484af6266e1aa2ae02f8d71255e425d54a8a40a6d0245130d09c770e756cfe14d3c8147f08126266e9a796fa6f3bd3354047e6e5e6879cc79e482216ae68f34a950faeba264b0ca2692e685ca72db9a9b9042a129b405773d863c3419d96ed765d8262206b75921e99b8873f02504c5375833a4d28a1abda7ae032d4fe0ba4812226c545c77f507c3d178e23b3f45d7c8b0eefef32681e733345427e8534c4b6ae8385d9204c5e3de7b56b715a674c4ac4d2c999a9d22e375bd5428df4eaa4a71
+store.parse.1=129
+store.bytes.1=018d01789c1d8cd10ac2301443ff25cf57d86ebbb5f657da3e0cad32a855b70e94d27ff7621e42120e6958af70edeff8384627a4c7ab7e6594b86c1b9c8f8492f69a84f17e248ee41bde52ca9133dd96bca7d8a350979ae5261c8328d45040c8cf72873b332b657850b39db431931d0c612d15eec4a336daaa59dbfe03dc472897
+store.write.1=ok
+store.get.1={"id":{"id":"x:2"},"empty":{},"arr":[],"nested":[[1,2],[{"q":[null,false]}]],"ctl":"\\u0000\\t\\n","long":9223372036854775807,"int":-2147483648} | {id:{id:TextNode},empty:{},arr:[],nested:[[IntNode,IntNode],[{q:[NullNode,BooleanNode]}]],ctl:TextNode,long:LongNode,int:IntNode}
+store.util0.1=008d01789c1d8cd10ac2301443ff25cf57d86ebbb5f657da3e0cad32a855b70e94d27ff7621e42120e6958af70edeff8384627a4c7ab7e6594b86c1b9c8f8492f69a84f17e248ee41bde52ca9133dd96bca7d8a350979ae5261c8328d45040c8cf72873b332b657850b39db431931d0c612d15eec4a336daaa59dbfe03dc472897
+store.parse.2=62
+store.bytes.2=0131789cab56ca4c51b2aa06934a1556c64ab53a4a554a56863a4a894a56463a4ab920c924b8406d2d00432c0c9f
+store.write.2=ok
+store.get.2={"id":{"id":"x:3"},"z":1,"a":2,"m":{"b":1,"a":2}} | {id:{id:TextNode},z:IntNode,a:IntNode,m:{b:IntNode,a:IntNode}}
+store.util0.2=0031789cab56ca4c51b2aa06934a1556c64ab53a4a554a56863a4a894a56463a4ab920c924b8406d2d00432c0c9f
+store.parse.3=2428
+store.bytes.3=01ac1c789cab56ca4c51b2aa06934a155629a9a9054ab53a4a60b1c451629418254689516294182546895162941825063961583b0a46012d0000d09a587e
+store.write.3=ok
+store.get.3={"id":{"id":"x:deep"},"d":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":1}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}} | {id:{id:TextNode},d:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:{a:IntNode}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+store.util0.3=00ac1c789cab56ca4c51b2aa06934a155629a9a9054ab53a4a60b1c451629418254689516294182546895162941825063961583b0a46012d0000d09a587e
+store.parse.4=21
+store.bytes.4=0118789cab562a482c2a4e752d2aca2f52b252ca4a4cce2ececf53aa05006e7608c9
+store.write.4=ok
+store.get.4={"parseError":"jackson"} | {parseError:TextNode}
+store.util0.4=0018789cab562a482c2a4e752d2aca2f52b252ca4a4cce2ececf53aa05006e7608c9
+store.get.missing=!RTE:NullPointerException
+store.frombytes.garbage=!RTE:JSONParseException<jackson>
+wire.is2jvs=00000000000000cc008502789c5d8e4d0e82301484af6266e1aa2ae02f8d71255e425d54a8a40a6d0245130d09c770e756cfe14d3c8147f08126266e9a796fa6f3bd3354047e6e5e6879cc79e482216ae68f34a950faeba264b0ca2692e685ca72db9a9b9042a129b405773d863c3419d96ed765d8262206b75921e99b8873f02504c5375833a4d28a1abda7ae032d4fe0ba4812226c545c77f507c3d178e23b3f45d7c8b0eefef32681e733345427e8534c4b6ae8385d9204c5e3de7b56b715a674c4ac4d2c999a9d22e375bd5428df4eaa4a710000000000000081008d01789c1d8cd10ac2301443ff25cf57d86ebbb5f657da3e0cad32a855b70e94d27ff7621e42120e6958af70edeff8384627a4c7ab7e6594b86c1b9c8f8492f69a84f17e248ee41bde52ca9133dd96bca7d8a350979ae5261c8328d45040c8cf72873b332b657850b39db431931d0c612d15eec4a336daaa59dbfe03dc472897000000000000002e0031789cab56ca4c51b2aa06934a1556c64ab53a4a554a56863a4a894a56463a4ab920c924b8406d2d00432c0c9f0000000000000000 -> [{"id":{"id":"news:d1","did":"d1","domain":"news"},"title":"First Doc","count":12,"score":1.1,"flag":true,"tags":["a","b"],"meta":{"k":"v","z":null},"big":-350287150,"dec":1.2345678901234568E29,"e":1.0E30,"neg":-0.0,"s":"é/ \\"<tag>&","emoji":"😀"} | {id:{id:TextNode,did:TextNode,domain:TextNode},title:TextNode,count:IntNode,score:DoubleNode,flag:BooleanNode,tags:[TextNode,TextNode],meta:{k:TextNode,z:NullNode},big:IntNode,dec:DoubleNode,e:DoubleNode,neg:DoubleNode,s:TextNode,emoji:TextNode}, {"id":{"id":"x:2"},"empty":{},"arr":[],"nested":[[1,2],[{"q":[null,false]}]],"ctl":"\\u0000\\t\\n","long":9223372036854775807,"int":-2147483648} | {id:{id:TextNode},empty:{},arr:[],nested:[[IntNode,IntNode],[{q:[NullNode,BooleanNode]}]],ctl:TextNode,long:LongNode,int:IntNode}, {"id":{"id":"x:3"},"z":1,"a":2,"m":{"b":1,"a":2}} | {id:{id:TextNode},z:IntNode,a:IntNode,m:{b:IntNode,a:IntNode}}]
+wire.os2sink={"id":{"id":"news:d1","did":"d1","domain":"news"},"title":"First Doc","count":12,"score":1.1,"flag":true,"tags":["a","b"],"meta":{"k":"v","z":null},"big":12345678901234567890,"dec":1.2345678901234568E29,"e":1.0E30,"neg":-0.0,"s":"é/ \\"<tag>&","emoji":"😀"}\n{"id":{"id":"x:2"},"empty":{},"arr":[],"nested":[[1,2],[{"q":[null,false]}]],"ctl":"\\u0000\\t\\n","long":9223372036854775807,"int":-2147483648}\n{"id":{"id":"x:3"},"z":1,"a":2,"m":{"b":1,"a":2}}\n{"id":{"id":"x:deep"},"d":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":1}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+solr.sink=true,true [POST /solr/c1/update/json?commit=true [{"id":{"id":"news:d1","did":"d1","domain":"news"},"title":"First Doc","count":12,"score":1.1,"flag":true,"tags":["a","b"],"meta":{"k":"v","z":null},"big":12345678901234567890,"dec":1.2345678901234568E29,"e":1.0E30,"neg":-0.0,"s":"é/ \\"<tag>&","emoji":"😀"},{"id":{"id":"x:2"},"empty":{},"arr":[],"nested":[[1,2],[{"q":[null,false]}]],"ctl":"\\u0000\\t\\n","long":9223372036854775807,"int":-2147483648},{"id":{"id":"x:3"},"z":1,"a":2,"m":{"b":1,"a":2}},{"id":{"id":"x:deep"},"d":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":{"a":1}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}], GET /solr/c1/update/json?commit=true&commit=true ]
+solr.status={"responseHeader":{"status":0},"status":{"c1":{"name":"c1","index":{"numDocs":42}},"c2":{"name":"c2","index":{"numDocs":"7"}},"template":{}}} | {responseHeader:{status:IntNode},status:{c1:{name:TextNode,index:{numDocs:IntNode}},c2:{name:TextNode,index:{numDocs:TextNode}},template:{}}} [GET /solr/admin/cores?action=STATUS&wt=json ]
+solr.cores=[c1, c2, template]
+solr.doccount.c1=0
+solr.doccount.c2=0
+solr.doccount.c3=0
+solr.addcore.c3=true [GET /solr/admin/cores?action=STATUS&wt=json , GET /solr/admin/cores?action=CREATE&name=c3&instanceDir=P&persist=true&wt=json&dataDir=P ]
+solr.addcore.c1=true [GET /solr/admin/cores?action=STATUS&wt=json ]
+solr.removecore.c2=true [GET /solr/admin/cores?action=STATUS&wt=json , GET /solr/admin/cores?action=UNLOAD&core=c2&persist=true&deleteIndex=true&wt=json ]
+solrmap.0="s" | TextNode
+solrmap.1=1 | IntNode
+solrmap.2=2 | LongNode
+solrmap.3=1.5 | FloatNode
+solrmap.4=2.25 | DoubleNode
+solrmap.5=0.1 | FloatNode
+solrmap.6=true | BooleanNode
+solrmap.7=null | null
+solrmap.8=null | null
+solrmap.9=null | null
+solrmap.10=null | null
+solrmap.11=null | null
+solrmap.12=null | null
+solrmap.13=[1,"a",null,{"x":1}] | [IntNode,TextNode,NullNode,{x:IntNode}]
+solrmap.14={"n":{"m":[1.0,2.5]}} | {n:{m:[DoubleNode,FloatNode]}}
+solrmap.15=null | null
+solrmap.16=null | null
+solrmap.17=null | null
+solrmap.18=3 | IntNode
+solrmap.19=4 | IntNode
+solrmap.20=null | null
+solrmap.21="NaN" | DoubleNode
+solrmap.22="Infinity" | FloatNode
+solrmap.23="é😀" | TextNode
+solrmap.24=null | null
+solrmap.simple={"b":2,"a":["x"]} | {b:IntNode,a:[TextNode]}
+solriter.rows=!RTE:NullPointerException
+solriter.aggregate={"type":"core_summary","coll":{"maxscore":1.5,"numberfound":2,"start":0,"query_time":3,"elapsed_time":5,"detailed_timing":{"time":2.0,"prepare":{"time":1.0}}}} | {type:TextNode,coll:{maxscore:FloatNode,numberfound:LongNode,start:LongNode,query_time:IntNode,elapsed_time:LongNode,detailed_timing:{time:DoubleNode,prepare:{time:DoubleNode}}}}
+facets.aggregate=true [{"type":"core_facets","coll":{"facets":{"cat":{"a":3,"b":1},"empty":{},"price":{"0":2,"10":5}}}} | {type:TextNode,coll:{facets:{cat:{a:LongNode,b:LongNode},empty:{},price:{0:LongNode,10:LongNode}}}}]
+visit.0.Query=params= aliases=[] results=0 errors=false
+visit.0.Filter=params= aliases=[] results=0 errors=false
+visit.0.Rows=params=rows=[20]& aliases=[] results=20 errors=false
+visit.0.Sort=params= aliases=[] results=0 errors=false
+visit.0.Select=params=fl=[T(score),id.id:T(id.id)]& aliases=[score/null, id.id/id.id] results=0 errors=false
+visit.0.Debug=params=debug=[timing]& aliases=[] results=0 errors=false
+visit.0.Group=params= aliases=[] results=0 errors=false
+visit.0.Facets=params= aliases=[] results=0 errors=false
+visit.0.all=params=rows=[20]&fl=[T(score),id.id:T(id.id)]&debug=[timing]& aliases=[score/null, id.id/id.id] results=20 errors=false
+visit.0.participate=false,false
+visit.1.Query=params=qm=[title:a, b, c, null]&q=[null]& aliases=[] results=0 errors=false
+visit.1.Filter=params=fq=[type:x, null, null, null, null]& aliases=[] results=0 errors=false
+visit.1.Rows=params=rows=[15]& aliases=[] results=15 errors=false
+visit.1.Sort=params= aliases=[] results=0 errors=false
+visit.1.Select=params=fl=[T(score),id.id:T(id.id)]& aliases=[score/null, id.id/id.id] results=0 errors=false
+visit.1.Debug=params=debug=[timing]& aliases=[] results=0 errors=false
+visit.1.Group=params= aliases=[] results=0 errors=false
+visit.1.Facets=params= aliases=[] results=0 errors=false
+visit.1.all=params=qm=[title:a, b, c, null]&q=[null]&fq=[type:x, null, null, null, null]&rows=[15]&fl=[T(score),id.id:T(id.id)]&debug=[timing]& aliases=[score/null, id.id/id.id] results=15 errors=false
+visit.1.participate=false,false
+visit.2.Query=params=qm=[single]& aliases=[] results=0 errors=false
+visit.2.Filter=params=fq=[one:filter]& aliases=[] results=0 errors=false
+visit.2.Rows=params=rows=[25]& aliases=[] results=25 errors=false
+visit.2.Sort=params= aliases=[] results=0 errors=false
+visit.2.Select=params=fl=[T(score),id.id:T(id.id)]& aliases=[score/null, id.id/id.id] results=0 errors=false
+visit.2.Debug=params=debug=[timing]& aliases=[] results=0 errors=false
+visit.2.Group=params= aliases=[] results=0 errors=false
+visit.2.Facets=params= aliases=[] results=0 errors=false
+visit.2.all=params=qm=[single]&fq=[one:filter]&rows=[25]&fl=[T(score),id.id:T(id.id)]&debug=[timing]& aliases=[score/null, id.id/id.id] results=25 errors=false
+visit.2.participate=false,false
+visit.3.Query=params= aliases=[] results=0 errors=false
+visit.3.Filter=params= aliases=[] results=0 errors=false
+visit.3.Rows=!RTE:NumberFormatException
+visit.3.Sort=!RTE:NullPointerException
+visit.3.Select=params=fl=[T(score),id.id:T(id.id)]& aliases=[score/null, id.id/id.id] results=0 errors=false
+visit.3.Debug=params=debugQuery=[true]& aliases=[] results=0 errors=false
+visit.3.Group=!RTE:NullPointerException
+visit.3.Facets=params= aliases=[] results=0 errors=false
+visit.3.all=!RTE:NumberFormatException
+visit.3.participate=false,false
+visit.4.Query=params= aliases=[] results=0 errors=false
+visit.4.Filter=params= aliases=[] results=0 errors=false
+visit.4.Rows=!RTE:NumberFormatException
+visit.4.Sort=params=sort=[T(one) desc]& aliases=[sort_7_d/T(one)] results=0 errors=false
+visit.4.Select=params=fl=[T(score),id.id:T(id.id)]& aliases=[score/null, id.id/id.id] results=0 errors=false
+visit.4.Debug=params=debugQuery=[true]& aliases=[] results=0 errors=false
+visit.4.Group=params=group.sort=[T(one) desc]&group=[true]& aliases=[sort_8_d/T(one)] results=0 errors=false
+visit.4.Facets=params= aliases=[] results=0 errors=false
+visit.4.all=!RTE:NumberFormatException
+visit.4.participate=false,false
+visit.5.Query=params= aliases=[] results=0 errors=false
+visit.5.Filter=params= aliases=[] results=0 errors=false
+visit.5.Rows=!RTE:NumberFormatException
+visit.5.Sort=params= aliases=[] results=0 errors=false
+visit.5.Select=params=fl=[T(score),id.id:T(id.id),<<NULL>>,m:T(max(a)),field1:T(has as),b:T(body),T(nofield),x:<<NULL>>,<<NULL>>,<<NULL>>]& aliases=[score/null, id.id/id.id, null/null, max(a)/m, has as/field1, body/b, nofield/null, null/x, null/null, null/null] results=0 errors=false
+visit.5.Debug=params=debugQuery=[true]&debug=[timing]& aliases=[] results=0 errors=false
+visit.5.Group=params= aliases=[] results=0 errors=false
+visit.5.Facets=params= aliases=[] results=0 errors=false
+visit.5.all=!RTE:NumberFormatException
+visit.5.participate=false,false
+visit.6.Query=params= aliases=[] results=0 errors=false
+visit.6.Filter=params= aliases=[] results=0 errors=false
+visit.6.Rows=params=rows=[0]& aliases=[] results=0 errors=false
+visit.6.Sort=params= aliases=[] results=0 errors=false
+visit.6.Select=params=fl=[T(score),id.id:T(id.id),t:T(title)]& aliases=[score/null, id.id/id.id, title/t] results=0 errors=false
+visit.6.Debug=params=debug=[timing]& aliases=[] results=0 errors=false
+visit.6.Group=params= aliases=[] results=0 errors=false
+visit.6.Facets=params= aliases=[] results=0 errors=false
+visit.6.all=params=rows=[0]&fl=[T(score),id.id:T(id.id),t:T(title)]&debug=[timing]& aliases=[score/null, id.id/id.id, title/t] results=0 errors=false
+visit.6.participate=false,false
+visit.7.Query=params= aliases=[] results=0 errors=false
+visit.7.Filter=params= aliases=[] results=0 errors=false
+visit.7.Rows=params=rows=[20]& aliases=[] results=20 errors=false
+visit.7.Sort=params= aliases=[] results=0 errors=false
+visit.7.Select=params=fl=[T(score),id.id:T(id.id)]& aliases=[score/null, id.id/id.id] results=0 errors=false
+visit.7.Debug=params=debug=[timing]& aliases=[] results=0 errors=false
+visit.7.Group=params= aliases=[] results=0 errors=false
+visit.7.Facets=params=facet=[on]&f.T(cat).facet.sort=[count]&f.T(price).facet.limit=[5]&f.T(price).facet.sort=[index]&f.T(price).facet.range.gap=[+1DAY]&f.T(price).facet.range.end=[NOW]&f.T(price).facet.range.limit=[5]&f.T(when).facet.date.gap=[+1DAY]&f.T(when).facet.date.end=[NOW]&f.<<NULL>>.facet.sort=[count]&facet.range=[T(when)]&facet.field=[T(cat), T(price), null]& aliases=[] results=0 errors=false
+visit.7.all=params=rows=[20]&fl=[T(score),id.id:T(id.id)]&debug=[timing]&facet=[on]&f.T(cat).facet.sort=[count]&f.T(price).facet.limit=[5]&f.T(price).facet.sort=[index]&f.T(price).facet.range.gap=[+1DAY]&f.T(price).facet.range.end=[NOW]&f.T(price).facet.range.limit=[5]&f.T(when).facet.date.gap=[+1DAY]&f.T(when).facet.date.end=[NOW]&f.<<NULL>>.facet.sort=[count]&facet.range=[T(when)]&facet.field=[T(cat), T(price), null]& aliases=[score/null, id.id/id.id] results=20 errors=false
+visit.7.participate=true,false
+visit.8.Query=params= aliases=[] results=0 errors=false
+visit.8.Filter=params= aliases=[] results=0 errors=false
+visit.8.Rows=params=rows=[20]& aliases=[] results=20 errors=false
+visit.8.Sort=params= aliases=[] results=0 errors=false
+visit.8.Select=params=fl=[T(score),id.id:T(id.id)]& aliases=[score/null, id.id/id.id] results=0 errors=false
+visit.8.Debug=params=debug=[timing]& aliases=[] results=0 errors=false
+visit.8.Group=params= aliases=[] results=0 errors=false
+visit.8.Facets=params=facet=[on]&f.T(only).facet.sort=[count]&f.T(only).facet.date.start=[2020]&facet.range=[T(only)]& aliases=[] results=0 errors=false
+visit.8.all=params=rows=[20]&fl=[T(score),id.id:T(id.id)]&debug=[timing]&facet=[on]&f.T(only).facet.sort=[count]&f.T(only).facet.date.start=[2020]&facet.range=[T(only)]& aliases=[score/null, id.id/id.id] results=20 errors=false
+visit.8.participate=true,false
+visit.9.Query=params=qm=[null]& aliases=[] results=0 errors=false
+visit.9.Filter=params=fq=[null]& aliases=[] results=0 errors=false
+visit.9.Rows=params=rows=[20]& aliases=[] results=20 errors=false
+visit.9.Sort=!RTE:NullPointerException
+visit.9.Select=params=fl=[T(score),id.id:T(id.id),a:T(f)]& aliases=[score/null, id.id/id.id, f/a] results=0 errors=false
+visit.9.Debug=params=debug=[timing]& aliases=[] results=0 errors=false
+visit.9.Group=!RTE:NullPointerException
+visit.9.Facets=params=facet=[on]&f.<<NULL>>.facet.sort=[count]& aliases=[] results=0 errors=false
+visit.9.all=!RTE:NullPointerException
+visit.9.participate=true,false
+visit.10.Query=params= aliases=[] results=0 errors=false
+visit.10.Filter=params= aliases=[] results=0 errors=false
+visit.10.Rows=params=rows=[20]& aliases=[] results=20 errors=false
+visit.10.Sort=params= aliases=[] results=0 errors=false
+visit.10.Select=params=fl=[T(score),id.id:T(id.id)]& aliases=[score/null, id.id/id.id] results=0 errors=false
+visit.10.Debug=params=debug=[timing]& aliases=[] results=0 errors=false
+visit.10.Group=params= aliases=[] results=0 errors=false
+visit.10.Facets=params= aliases=[] results=0 errors=false
+visit.10.all=params=rows=[20]&fl=[T(score),id.id:T(id.id)]&debug=[timing]& aliases=[score/null, id.id/id.id] results=20 errors=false
+visit.10.participate=false,false
+fixup.0=[{"doc":{"id":{"id":"news:d1","did":"d1","domain":"news"},"title":"First Doc","count":12,"score":1.1,"flag":true,"tags":["a","b"],"meta":{"k":"v","z":null},"big":12345678901234567890,"dec":1.2345678901234568E29,"e":1.0E30,"neg":-0.0,"s":"é/ \\"<tag>&","emoji":"😀","doc":{"meta":{}}}} | {doc:{id:{id:TextNode,did:TextNode,domain:TextNode},title:TextNode,count:IntNode,score:DoubleNode,flag:BooleanNode,tags:[TextNode,TextNode],meta:{k:TextNode,z:NullNode},big:BigIntegerNode,dec:DoubleNode,e:DoubleNode,neg:DoubleNode,s:TextNode,emoji:TextNode,doc:{meta:{}}}}, {"doc":{"id":{"id":"x:2"},"empty":{},"arr":[],"nested":[[1,2],[{"q":[null,false]}]],"ctl":"\\u0000\\t\\n","long":9223372036854775807,"int":-2147483648,"doc":{"meta":{}}}} | {doc:{id:{id:TextNode},empty:{},arr:[],nested:[[IntNode,IntNode],[{q:[NullNode,BooleanNode]}]],ctl:TextNode,long:LongNode,int:IntNode,doc:{meta:{}}}}]
+fixup.1=!RTE:NullPointerException
+fixup.2=!RTE:NullPointerException
+fixup.3=!RTE:NullPointerException
+cluster.lingo.LingoClusteringAlgorithm=!RTE:IllegalArgumentException
+cluster.kmeans.BisectingKMeansClusteringAlgorithm=!RTE:IllegalArgumentException
+collection.0=news [sniff=[SniffModulator], both=[SniffModulator, AnswerTypeModulator], bad=[], none=null]
+collection.1=<name_missing> [sniff=null, both=null, bad=null, none=null]
+collection.2=<name_missing> [sniff=null, both=null, bad=null, none=null]

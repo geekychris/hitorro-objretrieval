@@ -1,6 +1,6 @@
 package com.hitorro.obj.core.solr.retrievalmodules.object;
 
-import com.fasterxml.jackson.databind.JsonNode;
+import tools.jackson.databind.JsonNode;
 import com.hitorro.jsontypesystem.JVS;
 import com.hitorro.obj.core.solr.RetrievalContext;
 import com.hitorro.obj.core.solr.retrievalmodules.Retriever;
